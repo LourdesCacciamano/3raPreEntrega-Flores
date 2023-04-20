@@ -1,0 +1,75 @@
+.flex-padre {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(to bottom, $rosa-medio, $lila-gris);
+
+    img {
+        width: 90px;
+        padding: 12px;
+    }
+
+    nav {
+        ul {
+            li {
+                height: 30px;
+                width: 130px;
+                font-size: 25px;
+                text-align: center;
+                font-family: $links;
+                list-style: none;
+                display: inline-block;
+                margin-left: 10px;
+            }
+        }
+
+        .flex-links {
+            a {
+                background-color: $rosita;
+                text-decoration: none;
+                color: $gris-medio;
+                border-radius: 8px;
+                &:hover{
+                    padding: 5px 10px;
+                    border-radius: 20px;
+                    background-color: $blanco-hueso;
+                    color: $marron;
+                    transition: color 0.4s;
+                    background-color: 0.2s;
+                }
+            }
+        }
+    }
+    
+   
+}
+.logo {
+    animation-name: animando-logo;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+@keyframes animando-logo {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(45deg);
+
+    }
+
+    50% {
+        transform: rotate(90deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+
+    }
+}

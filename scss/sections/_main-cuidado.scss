@@ -1,0 +1,47 @@
+.main-cuidado {
+    min-height: 70vh;
+    background-image: linear-gradient(to top, $oscuro, $claro);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    ol {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+
+        li {
+            list-style-type: upper-roman;
+            font-size: 30px;
+            width: 220px;
+            text-align: center;
+            border: dashed $blanco-hueso;
+            color: $rosa-medio;
+            font-family: $titulo;
+            margin-top: 80px;
+        }
+    }
+
+    .video {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        iframe{
+            width: 500px;
+            padding: 15px;
+        }
+
+        p {
+            color: $gris-verde;
+            font-size: 40px;
+            text-align: center;
+            font-family: $subtitulo;
+            text-decoration: underline 4px $rosa-medio;
+            margin: 50px;
+        }
+    }
+
+
+}
