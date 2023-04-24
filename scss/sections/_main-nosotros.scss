@@ -1,5 +1,5 @@
 .main-nosotros {
-    min-height: 70vh;
+    min-height: $min-height;
     background-image: linear-gradient(to bottom, $gris-claro, $oscuro);
 
     .subtitulo {
@@ -25,19 +25,22 @@
 
     .info-primero {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
 
         p {
-            width: 150px;
+            width: 200px;
             text-align: center;
             border: solid 10px $gris-claro;
             font-family: $parrafo;
             font-size: 25px;
             background-color: $blanco-hueso;
             margin: 30px;
+            &::before{
+                content: "»";
+            }
         }
 
         img {
@@ -54,7 +57,7 @@
 
     .info-segunda {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         flex-wrap: wrap;
 
@@ -66,11 +69,15 @@
             font-size: 25px;
             background-color: $blanco-hueso;
             margin: 40px;
+            &::before{
+                content: "»";
+            }
         }
 
         img {
             width: 400px;
             margin-top: 80px;
+           
 
             &:hover {
                 transform: scale(1.2);
@@ -95,12 +102,15 @@
         flex-wrap: wrap;
 
         p {
-            width: 150px;
+            width: 200px;
             text-align: center;
             border: solid 10px $gris-claro;
             font-family: $parrafo;
             font-size: 25px;
             background-color: $blanco-hueso;
+            &::before{
+                content: "»";
+            }
         }
 
         iframe {
@@ -108,12 +118,6 @@
             margin-bottom: 60px;
         }
     }
-
-
-
-
-
-
 
 
 }
@@ -126,7 +130,7 @@
     }
 
     .info-primero img {
-        width: 200px !important;
+        width: 250px !important;
         margin-bottom: 20px !important;
         margin-right: 10px;
     }
@@ -149,7 +153,7 @@
     }
 
     .video iframe {
-        width: 500px !important;
+        width: 300px !important;
     }
 
     .ubicacion iframe {

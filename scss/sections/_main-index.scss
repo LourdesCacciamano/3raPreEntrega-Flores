@@ -15,7 +15,7 @@
     }
 }
 .main-index {
-    min-height: 65vh;
+    min-height: $min-height;
     display: flex;
     background-image: linear-gradient(to top, $gris-claro, $oscuro );
     img{
@@ -42,15 +42,21 @@
         margin: 40px auto;
         margin-top: 10px;
         font-family: $parrafo;
+        &::first-line{
+            font-weight: bold;
+            font-size: 22px;
+        }
     }
 }
 
 @media (max-width: 576px) {
     .main-index {
         display: flex !important;
-        justify-content: center !important;
+        flex-direction: column !important;
+        align-content: space-around  !important;
         flex-wrap: wrap !important;
         margin: auto !important;
+       
     }
     .padre-titulos p {
         font-size: 57px !important;

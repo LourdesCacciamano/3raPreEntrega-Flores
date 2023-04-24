@@ -1,5 +1,5 @@
 .main-contacto {
-    min-height: 70vh;
+    min-height: $min-height;
     background-image: linear-gradient(to bottom, $gris-claro, $oscuro);
 
     .intro {
@@ -94,5 +94,8 @@
 @media (max-width: 576px) {
     .intro hr {
         width: 444px !important;
+    }
+    .form-enviar{
+        background-color: $blanco-hueso !important;
     }
 }

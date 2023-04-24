@@ -1,5 +1,5 @@
 .main-cuidado {
-    min-height: 70vh;
+    min-height: $min-height;
     background-image: linear-gradient(to bottom, $gris-claro, $oscuro);
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,6 +19,7 @@
             color: $rosa-medio;
             font-family: $titulo;
             margin-top: 80px;
+
         }
     }
 
@@ -27,8 +28,8 @@
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
-        
-        iframe{
+
+        iframe {
             width: 500px;
             padding: 15px;
         }
@@ -52,10 +53,15 @@
         flex-direction: column !important;
     }
 
-    .video p {
-        font-size: 25px !important;
-        text-decoration: none !important;
-        border: solid 5px #997d7d !important;
-        margin: 20px !important;
+    .video {
+        width: 300px !important;
+        margin: auto !important;
+
+        p {
+            font-size: 20px !important;
+            text-decoration: none !important;
+            border: solid 5px #997d7d !important;
+            margin: 20px auto !important;
+        }
     }
 }
