@@ -1,6 +1,6 @@
 .main-nosotros {
     min-height: 70vh;
-    background-image: linear-gradient(to top, $oscuro, $claro);
+    background-image: linear-gradient(to bottom, $gris-claro, $oscuro);
 
     .subtitulo {
         display: flex;
@@ -116,4 +116,43 @@
 
 
 
+}
+
+@media (max-width: 576px) {
+    .subtitulo h2 {
+        width: 600px !important;
+        font-size: 35px !important;
+        
+    }
+
+    .info-primero img {
+        width: 200px !important;
+        margin-bottom: 20px !important;
+        margin-right: 10px;
+    }
+
+    .info-primero p{
+        width: 200px !important;
+        font-size: 20px !important;
+    }
+
+    .info-segunda img {
+        display: flex;
+        width: 300px !important;
+        margin-bottom: 10px;
+    }
+
+    .info-segunda p {
+        width: 200px  !important;
+        font-size: 20px !important;
+        margin-top: 50px !important;
+    }
+
+    .video iframe {
+        width: 500px !important;
+    }
+
+    .ubicacion iframe {
+        width: 300px !important;
+    }
 }

@@ -5,17 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8f5c9daf85.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Flowers´Naturals / Inicio</title>
     <link rel="shortcut icon" href="./recursos/imagenes/logo/logo-header.jpeg">
 </head>
 
 <body>
-    <header class="flex-padre">
-        <a  href="./index.html" id="inicio">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid ancho-max">
+            <a class="navbar-brand logo" href="./index.html"><img class="logo-nav"
+                    src="./recursos/imagenes/logo/logo-header.jpeg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle menu" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            MENÚ
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./index.html">Inicio</a></li>
+                            <li><a class="dropdown-item" href="./categorias/nosotros.html">Nosotros</a></li>
+                            <li><a class="dropdown-item" href="./categorias/flores.html">Flores</a></li>
+                            <li><a class="dropdown-item" href="./categorias/cuidado.html">Cuidados</a></li>
+                            <li><a class="dropdown-item" href="./categorias/contactanos.html">Contacto</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <img src="./recursos/imagenes/logo/header.png" alt="fondo-header">
+        <h1 class="animate__animated animate__backInUp">FLOWERS´ <br>
+            NATURALS</h1>
+
+
+        <!-- <a  href="./index.html" id="inicio">
         <img src="./recursos/imagenes/logo/logo-header.jpeg" class="logo" alt="logo">
        </a>
 
@@ -28,58 +62,59 @@
                 <li><a href="./categorias/cuidado.html">Cuidados</a></li>
                 <li> <a href="./categorias/contactanos.html">Contacto</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
 
     <main>
         <section class="padre-titulos">
-            <h1 class="animate__animated animate__backInUp">FLOWERS´ <br>
-                NATURALS</h1>
+
             <p>¿Sabías Esto?</p>
         </section>
-        
+
         <section class="main-index">
             <div>
-            <img src="./recursos/imagenes/pimpollos/pimpollo rosa (inicio).jpg" alt="pimpollo de rosa">
+                <img src="./recursos/imagenes/pimpollos/pimpollo rosa (inicio).jpg" alt="pimpollo de rosa">
                 <h2>ROSA</h2>
                 <p>Son una grán fuente de vitaminas C. Su nombre deriva del griego "Rhodéa", sifnifica
                     "lo que desprende olor, lo que tiene fragancia"</p>
-              </div> 
-           
-              <div>
+            </div>
+
+            <div>
                 <img src="./recursos/imagenes/pimpollos/pimpollo gerbera (inicio).jpg" alt="pimpollo de gerbera">
-                    <h2>GERBERA</h2>
-                    <p>Son originarias de Africa del Sur, Transvaal, también se conoce como "margarita del
-                        Transvaal". Simbolizan belleza e inocencia</p>
-                  </div> 
+                <h2>GERBERA</h2>
+                <p>Son originarias de Africa del Sur, Transvaal, también se conoce como "margarita del
+                    Transvaal". Simbolizan belleza e inocencia</p>
+            </div>
 
-                  <div>
-                    <img src="./recursos/imagenes/pimpollos/pimpollo alstroemeria (inicio).jpg" alt="pimpollo de alstroemeria">
-                        <h2>ALSTROEMERIA</h2>
-                        <p>Simbolizan la amistad, tienen 6 pétalos y cada uno de ellos representan una faceta:
-                            Comprención, Humor, Paciencia, Empatía, Compromiso, Respeto</p>
-                      </div> 
+            <div>
+                <img src="./recursos/imagenes/pimpollos/pimpollo alstroemeria (inicio).jpg"
+                    alt="pimpollo de alstroemeria">
+                <h2>ALSTROEMERIA</h2>
+                <p>Simbolizan la amistad, tienen 6 pétalos y cada uno de ellos representan una faceta:
+                    Comprención, Humor, Paciencia, Empatía, Compromiso, Respeto</p>
+            </div>
 
-                      <div>
-                        <img src="./recursos/imagenes/pimpollos/pimpollo lisianthus.jpg" alt="pimpollo de lisianthus">
-                            <h2>LISIANTHUS</h2>
-                            <p>Su significado es la entrega amorosa y el compromiso profundo, por eso simboliza el
-                                "Amor
-                                eterno". Es muy utilizado para bodas o aniversarios</p>
-                          </div> 
+            <div>
+                <img src="./recursos/imagenes/pimpollos/pimpollo lisianthus.jpg" alt="pimpollo de lisianthus">
+                <h2>LISIANTHUS</h2>
+                <p>Su significado es la entrega amorosa y el compromiso profundo, por eso simboliza el
+                    "Amor
+                    eterno". Es muy utilizado para bodas o aniversarios</p>
+            </div>
 
 
 
         </section>
-    </section>
+        </section>
     </main>
 
-    <footer class="footer-flex">
+    <footer class="footer">
         <section>
             <div class="redes">
-                <img src="./recursos/imagenes/redes/icono-facebook.png" alt="logo de facebook">
-                <img src="./recursos/imagenes/redes/icono instagram.png" alt="logo de instagram">
-                <img src="./recursos/imagenes/redes/icono twitter.png" alt="logo de twitter">
+                <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"
+                        style="color: #5a4c61;"></i></a>
+                <a href="https://z-p15.www.instagram.com/accounts/login/?next=/p/CK8SOUgBxgo/&hl=es-la" target="_blank"><i class="fa-brands fa-square-instagram" style="color: #5a4c61;"></i></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-square-twitter" style="color: #5a4c61;"></i></a>
             </div>
             <div class="contactanos">
                 <h3>Contactanos</h3>
@@ -91,7 +126,7 @@
             </div>
         </section>
     </footer>
-    
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

@@ -1,0 +1,72 @@
+.navbar{
+    background-color: darken($color: $gris-claro, $amount: 15);
+    box-shadow: 10px 10px 10px $gris-medio;
+    ul{
+        li{
+            a{
+                color: $gris-claro;
+                font-family: $parrafo;
+                font-weight: bold;
+                &:hover{
+                    background-color: $blanco-hueso;
+                    color: $negro;
+                    border-radius: 15px;
+
+                }
+            }
+        }
+    }
+    .ancho-max{
+         max-width: 850px;
+    }
+    
+    .navbar-collapse{
+        justify-content: flex-end;
+    }
+   .logo-nav{
+    width: 90px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px $gris-oscuro;
+    animation-name: animando-logo;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-delay: 3s;
+   }
+   .menu{
+    font-family: $parrafo;
+    font-size: 25px;
+    font-weight: bold;
+   }
+  
+}
+
+@keyframes animando-logo {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(45deg);
+
+    }
+
+    50% {
+        transform: rotate(90deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+
+    }
+}
+
+@media  (max-width: 576px) {
+    .logo-nav{
+        width: 70px !important;
+    }
+    .menu{
+        font-size: 15px !important;
+    }
+}
+

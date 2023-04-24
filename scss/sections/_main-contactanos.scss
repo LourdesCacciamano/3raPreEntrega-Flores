@@ -1,6 +1,6 @@
 .main-contacto {
     min-height: 70vh;
-    background-image: linear-gradient(to top, $oscuro, $claro);
+    background-image: linear-gradient(to bottom, $gris-claro, $oscuro);
 
     .intro {
         display: flex;
@@ -11,8 +11,8 @@
         h2 {
             font-family: $subtitulo;
             font-size: 50px;
-            color: $gris-claro;
-            text-decoration: underline 3px $rosita;
+            color: $gris-medio;
+            text-decoration: underline 3px $gris-claro;
             margin-top: 50px;
             margin-bottom: 10px;
         }
@@ -22,12 +22,13 @@
             font-size: 20px;
             width: 250px;
             text-align: center;
-            color: $gris-verde;
+            color: $gris-oscuro;
             margin-bottom: 20px;
         }
 
         hr {
             width: 800px;
+           color: $negro;
         }
     }
 
@@ -40,7 +41,7 @@
         .form-ingresa-apellido,
         .form-ingresa-edad {
             width: 200px;
-            height: 20px;
+            height: 50px;
             text-align: center;
             padding: 10px;
 
@@ -58,7 +59,7 @@
             color: $gris-claro;
             font-size: 20px;
             margin: 10px;
-
+    
         }
 
         .form-ingresa-mensaje {
@@ -88,4 +89,10 @@
 
     }
 
+}
+
+@media (max-width: 576px) {
+    .intro hr {
+        width: 444px !important;
+    }
 }

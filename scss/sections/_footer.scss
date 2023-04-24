@@ -1,26 +1,35 @@
-.footer-flex {
-    min-height: 10vh;
+.footer {
+    min-height: 20vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
     flex-wrap: wrap;
-    background-image: linear-gradient(to top, $rosa-medio, $lila-gris);
+    background-color: darken($color: $gris-claro, $amount: 15);
+    box-shadow: 15px 15px 15px $gris-medio;
 
     .redes {
         display: flex;
         align-items: center;
-        justify-content: center;
-
-        img {
-            background-color: $negro;
-            border-radius: 10px;
-            padding: 1px;
-            margin: 3px;
-            margin-top: 25px;
-            margin-bottom: 10px;
-            width: 40px;
+        justify-content: space-evenly;
+        margin: 3px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-size: 40px;
+        a{
+               &:hover{
+            background-color: $blanco-hueso;
+            color: $negro;
+            transition: color 0.4s;
+            background-color: 0.2s;
+            border-radius: 15px;
+            width: 50px;
+            text-align: center;
         }
+        }
+     
+        
+
     }
 
     .contactanos {
@@ -29,7 +38,7 @@
         align-content: center;
         flex-wrap: wrap;
         flex-direction: column;
-        background-color: $lila-gris;
+        background-color: $gris-claro;
         border-radius: 5px;
 
         h3 {
@@ -57,10 +66,11 @@
             font-family: $links;
             margin-top: 10px;
             color: $gris-claro-lila;
-            background-color: $lila-gris;
+            background-color: $gris-claro;
             border-radius: 5px;
             font-weight: bold;
-            &:hover{
+
+            &:hover {
                 background-color: $blanco-hueso;
                 color: $negro;
                 transition: color 0.4s;

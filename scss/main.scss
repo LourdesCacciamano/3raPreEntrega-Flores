@@ -1,17 +1,18 @@
 // VARIABLES
 @import "./utilitis/typo";
 @import "./utilitis/colors";
-@import "./utilitis/background";
 
 
 // RECETEO-EXTEND Y MIXIN
 @import "./utilitis/receteo";
 
 // SECCIONES
+@import "./sections/nav";
 @import "./sections/header";
-@import "./sections/footer";
 @import "./sections/main-index";
 @import "./sections/main-nosotros";
 @import "./sections/main-flores";
 @import "./sections/main-cuidado";
 @import "./sections/main-contactanos";
+@import "./sections/footer";
+

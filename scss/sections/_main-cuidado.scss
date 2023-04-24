@@ -1,6 +1,6 @@
 .main-cuidado {
     min-height: 70vh;
-    background-image: linear-gradient(to top, $oscuro, $claro);
+    background-image: linear-gradient(to bottom, $gris-claro, $oscuro);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -44,4 +44,18 @@
     }
 
 
+}
+
+@media (max-width: 576px) {
+    main ol {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .video p {
+        font-size: 25px !important;
+        text-decoration: none !important;
+        border: solid 5px #997d7d !important;
+        margin: 20px !important;
+    }
 }
