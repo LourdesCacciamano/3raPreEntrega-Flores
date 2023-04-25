@@ -1,0 +1,86 @@
+// EXTEND
+.flex-extend {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.grid-flores {
+    background-image: linear-gradient(to bottom, $blanco-hueso, $rosita);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 20px;
+}
+
+.main-extend {
+    min-height: $min-height;
+    background-image: linear-gradient(to bottom, $gris-claro, $oscuro);
+}
+
+.extend-parrafos {
+    width: 200px;
+    text-align: center;
+    border: solid 10px $gris-claro;
+    font-family: $parrafo;
+    font-size: 25px;
+    background-color: $blanco-hueso;
+
+    &::before {
+        content: "»";
+    }
+}
+
+// MIXIN
+@mixin main-index ($ancho, $grosor, $color-texto, $tipografia, $distancia-afuera) {
+    width: $ancho;
+    font-size: $grosor;
+    color: $color-texto;
+    font-family: $tipografia;
+    margin: $distancia-afuera;
+    text-align: center;
+    background-color: $blanco-hueso;
+}
+
+@mixin parrafo ($color-texto, $grosor, $distancia-afuera, $decoracion) {
+    color: $color-texto;
+    font-size: $grosor, ;
+    margin: $distancia-afuera;
+    text-decoration: $decoracion;
+    font-family: $subtitulo;
+    text-align: center;
+}
+
+@mixin flores ($distancia-afuera) {
+    margin: $distancia-afuera;
+    width: 800px;
+    height: 400px;
+}
+
+@mixin form-contacto ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+    text-align: center;
+}
+
+@mixin h1 ( $tipografia, $distancia-adentro, $negrita, $ancho) {
+    font-family: $tipografia;
+    padding: $distancia-adentro;
+    font-weight: $negrita;
+    width: $ancho;
+    color: $negro;
+    background-image: linear-gradient(to bottom, $claro2, $oscuro2);
+    font-size: 50px;
+    border-radius: 15px;
+    text-align: center;
+    animation-iteration-count: 1;
+    animation-duration: 1.5s;
+}

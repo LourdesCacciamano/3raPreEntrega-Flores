@@ -1,6 +1,12 @@
 .main-flores {
-    min-height: $min-height;
-    background-image: linear-gradient(to bottom, $gris-claro, $oscuro);
+   @extend .main-extend;
+
+    h1 {
+        @include h1 ($subtitulo, 40px, bold, 900px);
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
 
     .imagen {
         margin: 10px;
@@ -26,17 +32,11 @@
     }
 
     .rosas-flores {
-        background-image: linear-gradient(to bottom, $blanco-hueso, $rosita);
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 1fr);
+        @extend .grid-flores ;
         grid-template-areas:
             "imagen1 imagen2 imagen3"
         ;
-        margin: auto;
-        width: 800px;
-        height: 400px;
-        grid-gap: 20px;
+        @include flores (auto);
         padding-top: 20px;
 
         .imagen1 {
@@ -58,17 +58,13 @@
     }
 
     .gerberas-flores {
-        background-image: linear-gradient(to bottom, $blanco-hueso, $rosita);
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 1fr);
+        @extend .grid-flores ;
         grid-template-areas:
             "imagen4 imagen5 imagen6"
         ;
-        margin: 30px auto;
-        width: 800px;
-        height: 400px;
-        grid-gap: 20px;
+        @include flores ( 30px auto);
+        
+        
 
         .imagen4 {
             grid-area: imagen4;
@@ -88,17 +84,12 @@
     }
 
     .alstroemerias-flores {
-        background-image: linear-gradient(to bottom, $blanco-hueso, $rosita);
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 1fr);
+        @extend .grid-flores ;
         grid-template-areas:
             "imagen7 imagen8 imagen9"
         ;
-        margin: 30px auto;
-        width: 800px;
-        height: 400px;
-        grid-gap: 20px;
+        @include flores ( 30px auto);
+      
 
         .imagen7 {
             grid-area: imagen7;
@@ -117,17 +108,13 @@
     }
 
     .ramos-flores {
-        background-image: linear-gradient(to bottom, $blanco-hueso, $rosita);
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 1fr);
+        @extend .grid-flores ;
         grid-template-areas:
             "imagen10 imagen11 imagen12"
         ;
-        margin: 30px auto;
-        width: 800px;
-        height: 400px;
-        grid-gap: 20px;
+        @include flores ( 30px auto);
+       
+        
 
         .imagen10 {
             grid-area: imagen10;
@@ -146,17 +133,11 @@
     }
 
     .centros-flores {
-        background-image: linear-gradient(to bottom, $blanco-hueso, $rosita);
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 1fr);
+        @extend .grid-flores ;
         grid-template-areas:
             "imagen13 imagen14 imagen15"
         ;
-        margin: auto;
-        width: 800px;
-        height: 400px;
-        grid-gap: 20px;
+        @include flores (auto);
         padding-bottom: 10px;
 
         .imagen13 {
@@ -178,16 +159,24 @@
 }
 
 @media (max-width: 576px) {
+    h1 {
+        width: 370px !important;
+        height: 97px !important;
+        margin: auto !important;
+        font-size: 27px !important;
+    }
+
     .rosas-flores {
         grid-template-columns: repeat(1, 1fr) !important;
         grid-template-rows: repeat(3, 1fr) !important;
         width: 300px !important;
         height: 700px !important;
+        margin-top: 30px !important;
         grid-template-areas:
             "imagen1"
             "imagen2"
             "imagen3"
-        !important ;
+            !important;
     }
 
     .gerberas-flores {
@@ -195,11 +184,11 @@
         grid-template-rows: repeat(3, 1fr) !important;
         width: 300px !important;
         height: 800px !important;
-        grid-template-areas :
+        grid-template-areas:
             "imagen4"
             "imagen5"
             "imagen6"
-       !important ;
+            !important;
     }
 
     .alstroemerias-flores {
@@ -211,7 +200,7 @@
             "imagen7"
             "imagen8"
             "imagen9"
-        !important ;
+            !important;
     }
 
     .ramos-flores {
@@ -223,7 +212,7 @@
             "imagen10"
             "imagen11"
             "imagen12"
-        !important ;
+            !important;
     }
 
     .centros-flores {
@@ -235,7 +224,7 @@
             "imagen13"
             "imagen14"
             "imagen15"
-        !important;
+            !important;
     }
 
     .p-flores {
