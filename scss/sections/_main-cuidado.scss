@@ -1,17 +1,14 @@
-.main-cuidado {
+.main-cuidado{
     @extend .main-extend;
     background-repeat: no-repeat;
     background-size: cover;
-
-    h1{
+    &__titulo{
         @include h1 ($subtitulo, 40px, bold, 900px);
         margin: auto;
         margin-bottom: 40px;
     }
-
-    ol {
+    &__lista{
         @extend .flex-extend;
-
         li {
             list-style-type: upper-roman;
             font-size: 30px;
@@ -24,13 +21,13 @@
 
         }
     }
-
-    .video {
+    &__video {
         @extend .flex-column;
 
         iframe {
-            width: 500px;
+            width: 50%;
             padding: 15px;
+            margin: auto;
         }
 
         p {
@@ -38,9 +35,9 @@
        
         }
     }
-
-
 }
+
+
 
 @media (max-width: 576px) {
     h1{
@@ -55,8 +52,6 @@
     }
 
     .video {
-        width: 300px !important;
-        margin: auto !important;
 
         p {
             font-size: 20px !important;

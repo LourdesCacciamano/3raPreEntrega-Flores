@@ -1,4 +1,4 @@
-.footer {
+.footer{
     min-height: $min-footer;
     display: flex;
     flex-direction: row;
@@ -8,7 +8,7 @@
     background-color: darken($color: $gris-claro, $amount: 15);
     box-shadow: 15px 15px 15px $gris-medio;
 
-    .redes {
+    &__redes {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -35,14 +35,14 @@
 
     }
 
-    .contactanos {
+    &__contactanos {
         display: flex;
         align-items: center;
         align-content: center;
         flex-wrap: wrap;
         flex-direction: column;
-        background-color: $gris-claro;
-        border-radius: 5px;
+        border-radius: 7px;
+        background-color: $gris-claro-lila;
 
         h3 {
             margin-bottom: 10px;
@@ -58,7 +58,7 @@
         }
     }
 
-    .volver {
+    &__volver {
         display: flex;
         justify-content: space-evenly;
 

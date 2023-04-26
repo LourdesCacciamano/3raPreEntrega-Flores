@@ -1,49 +1,63 @@
-.padre-titulos {
-    @extend .flex-column;
-    background-image: linear-gradient(to top, $oscuro, $gris-claro);
-
-    p {
-        @include parrafo ($gris-claro, 70px, 20px, overline 2px $gris-oscuro-rojo);
-        
-    }
-}
 .main-index {
-    min-height: $min-height;
-    display: flex;
-    background-image: linear-gradient(to top, $gris-claro, $oscuro );
-    img{
-        width: 300px;
-        margin: 10px;
-        margin-left: 25px;
+    &__subtitulo {
+        @extend .flex-column;
+        background-image: linear-gradient(to top, $oscuro, $gris-claro);
+
+        p {
+            @include parrafo ($gris-claro, 70px, 20px, overline 2px $gris-oscuro-rojo);
+
+        }
+
     }
-    h2{
-        @include main-index (200px, 25px, $rosa-medio, $titulo, 5px auto);
-     
-    }
-    p{
-        @include main-index (250px, 20px, $gris-oscuro, $parrafo, 40px auto);
-    
-        border: solid 2px $gris-medio;
-        margin-top: 10px;
-        &::first-line{
-            font-weight: bold;
-            font-size: 22px;
+
+    &__informacion {
+        min-height: $min-height;
+        display: flex;
+        background-image: linear-gradient(to top, $gris-claro, $oscuro );
+
+        img {
+            width: 300px;
+            margin: 10px;
+            margin-left: 25px;
+        }
+
+        h2 {
+            @include main-index (200px, 25px, $rosa-medio, $titulo, 5px auto);
+
+        }
+
+        p {
+            @include main-index (250px, 20px, $gris-oscuro, $parrafo, 40px auto);
+
+            border: solid 2px $gris-medio;
+            margin-top: 10px;
+
+            &::first-line {
+                font-weight: bold;
+                font-size: 22px;
+            }
         }
     }
 }
+
+
+
+
 
 @media (max-width: 576px) {
     .main-index {
         display: flex !important;
         flex-direction: column !important;
-        align-content: space-around  !important;
+        align-content: space-around !important;
         flex-wrap: wrap !important;
         margin: auto !important;
-        img{
+
+        img {
             width: 200px !important;
         }
-       
+
     }
+
     .padre-titulos p {
         font-size: 57px !important;
     }

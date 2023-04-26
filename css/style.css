@@ -7,19 +7,19 @@
   margin: 0;
   padding: 0; }
 
-.flex-extend, .main-nosotros .info-primero, .main-nosotros .info-segunda, .main-nosotros .ubicacion, .main-cuidado ol {
+.flex-extend, .main-nosotros__info-primero, .main-nosotros__info-segunda, .main-nosotros__ubicacion, .main-cuidado__lista {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap; }
 
-.flex-column, .padre-titulos, .main-cuidado .video, .main-contacto .intro {
+.flex-column, .main-index__subtitulo, .main-cuidado__video, .main-contacto__intro {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap; }
 
-.grid-flores, .main-flores .rosas-flores, .main-flores .gerberas-flores, .main-flores .alstroemerias-flores, .main-flores .ramos-flores, .main-flores .centros-flores {
+.grid-flores, .main-flores__rosas-flores, .main-flores__gerberas-flores, .main-flores__alstroemerias-flores, .main-flores__ramos-flores, .main-flores__centros-flores {
   background-image: linear-gradient(to bottom, #dad4ec, #eec0f7);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -30,14 +30,14 @@
   min-height: 70vh;
   background-image: linear-gradient(to bottom, #ADA0A6, #363333); }
 
-.extend-parrafos, .main-nosotros .info-primero p, .main-nosotros .info-segunda p, .main-nosotros .ubicacion p {
-  width: 200px;
+.extend-parrafos, .main-nosotros__info-primero p, .main-nosotros__info-segunda p, .main-nosotros__ubicacion p {
+  width: 220px;
   text-align: center;
   border: solid 10px #ADA0A6;
   font-family: "Chivo Mono", monospace;
   font-size: 25px;
   background-color: #dad4ec; }
-  .extend-parrafos::before, .main-nosotros .info-primero p::before, .main-nosotros .info-segunda p::before, .main-nosotros .ubicacion p::before {
+  .extend-parrafos::before, .main-nosotros__info-primero p::before, .main-nosotros__info-segunda p::before, .main-nosotros__ubicacion p::before {
     content: "»"; }
 
 .navbar {
@@ -84,13 +84,13 @@
   .menu {
     font-size: 15px !important; } }
 
-.header {
+.header-index {
   height: 100vh;
   background-color: #ADA0A6;
   display: flex;
   flex-direction: column-reverse;
   align-items: center; }
-  .header h1 {
+  .header-index h1 {
     font-family: "Unkempt", cursive;
     padding: 33px;
     font-weight: bolder;
@@ -103,7 +103,7 @@
     animation-iteration-count: 1;
     animation-duration: 1.5s;
     height: 180px; }
-  .header img {
+  .header-index img {
     width: 350px; }
 
 @media (max-width: 576px) {
@@ -117,9 +117,9 @@
   img {
     width: 144px !important; } }
 
-.padre-titulos {
+.main-index__subtitulo {
   background-image: linear-gradient(to top, #363333, #ADA0A6); }
-  .padre-titulos p {
+  .main-index__subtitulo p {
     color: #ADA0A6;
     font-size: 70px;
     margin: 20px;
@@ -127,15 +127,15 @@
     font-family: "Ranchers", cursive;
     text-align: center; }
 
-.main-index {
+.main-index__informacion {
   min-height: 70vh;
   display: flex;
   background-image: linear-gradient(to top, #ADA0A6, #363333); }
-  .main-index img {
+  .main-index__informacion img {
     width: 300px;
     margin: 10px;
     margin-left: 25px; }
-  .main-index h2 {
+  .main-index__informacion h2 {
     width: 200px;
     font-size: 25px;
     color: #d398b4;
@@ -143,7 +143,7 @@
     margin: 5px auto;
     text-align: center;
     background-color: #dad4ec; }
-  .main-index p {
+  .main-index__informacion p {
     width: 250px;
     font-size: 20px;
     color: #5c5654;
@@ -153,7 +153,7 @@
     background-color: #dad4ec;
     border: solid 2px #707573;
     margin-top: 10px; }
-    .main-index p::first-line {
+    .main-index__informacion p::first-line {
       font-weight: bold;
       font-size: 22px; }
 
@@ -161,7 +161,7 @@
   .main-index {
     display: flex !important;
     flex-direction: column !important;
-    align-content: space-around  !important;
+    align-content: space-around !important;
     flex-wrap: wrap !important;
     margin: auto !important; }
     .main-index img {
@@ -169,11 +169,11 @@
   .padre-titulos p {
     font-size: 57px !important; } }
 
-.main-nosotros .subtitulo {
+.main-nosotros__titulo {
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
-  .main-nosotros .subtitulo h1 {
+  .main-nosotros__titulo h1 {
     font-family: "Ranchers", cursive;
     padding: 30px;
     font-weight: bold;
@@ -187,28 +187,28 @@
     animation-duration: 1.5s;
     margin: 60px; }
 
-.main-nosotros .info-primero p {
+.main-nosotros__info-primero p {
   margin: 30px; }
 
-.main-nosotros .info-primero img {
-  width: 400px;
+.main-nosotros__info-primero img {
+  width: 380px;
   margin-top: 50px; }
-  .main-nosotros .info-primero img:hover {
+  .main-nosotros__info-primero img:hover {
     transform: scale(1.2);
     transition: 1s; }
 
-.main-nosotros .info-segunda p {
+.main-nosotros__info-segunda p {
   margin: 40px; }
 
-.main-nosotros .info-segunda img {
-  width: 400px;
+.main-nosotros__info-segunda img {
+  width: 380px;
   margin-top: 80px;
   margin-bottom: 50px; }
-  .main-nosotros .info-segunda img:hover {
+  .main-nosotros__info-segunda img:hover {
     transform: scale(1.2);
     transition: 1s; }
 
-.main-nosotros .ubicacion iframe {
+.main-nosotros__ubicacion iframe {
   margin-top: 50px;
   margin-bottom: 60px; }
 
@@ -228,13 +228,13 @@
     width: 300px !important;
     margin-bottom: 10px; }
   .info-segunda p {
-    width: 200px  !important;
+    width: 200px !important;
     font-size: 20px !important;
     margin-top: 50px !important; }
   .ubicacion iframe {
     width: 300px !important; } }
 
-.main-flores h1 {
+.main-flores__titulo h1 {
   font-family: "Ranchers", cursive;
   padding: 40px;
   font-weight: bold;
@@ -268,80 +268,80 @@
   animation-iteration-count: 1;
   animation-delay: .5s; }
 
-.main-flores .rosas-flores {
+.main-flores__rosas-flores {
   grid-template-areas: "imagen1 imagen2 imagen3";
   margin: auto;
   width: 800px;
   height: 400px;
   padding-top: 20px; }
-  .main-flores .rosas-flores .imagen1 {
+  .main-flores__rosas-flores .imagen1 {
     grid-area: imagen1;
     background-image: url("../recursos/imagenes/Rosas/rosa-roja.jpg"); }
-  .main-flores .rosas-flores .imagen2 {
+  .main-flores__rosas-flores .imagen2 {
     grid-area: imagen2;
     background-image: url("../recursos/imagenes/Rosas/rosa-rosas.jpg"); }
-  .main-flores .rosas-flores .imagen3 {
+  .main-flores__rosas-flores .imagen3 {
     grid-area: imagen3;
     background-image: url("../recursos/imagenes/Rosas/rosa-amarilla.jpg"); }
 
-.main-flores .gerberas-flores {
+.main-flores__gerberas-flores {
   grid-template-areas: "imagen4 imagen5 imagen6";
   margin: 30px auto;
   width: 800px;
   height: 400px; }
-  .main-flores .gerberas-flores .imagen4 {
+  .main-flores__gerberas-flores .imagen4 {
     grid-area: imagen4;
     background-image: url("../recursos/imagenes/gerberas/ger-rosa.jpeg"); }
-  .main-flores .gerberas-flores .imagen5 {
+  .main-flores__gerberas-flores .imagen5 {
     grid-area: imagen5;
     background-image: url("../recursos/imagenes/gerberas/ger-blanca y lila.jpeg"); }
-  .main-flores .gerberas-flores .imagen6 {
+  .main-flores__gerberas-flores .imagen6 {
     grid-area: imagen6;
     background-image: url("../recursos/imagenes/gerberas/ger-naranjas.jpeg"); }
 
-.main-flores .alstroemerias-flores {
+.main-flores__alstroemerias-flores {
   grid-template-areas: "imagen7 imagen8 imagen9";
   margin: 30px auto;
   width: 800px;
   height: 400px; }
-  .main-flores .alstroemerias-flores .imagen7 {
+  .main-flores__alstroemerias-flores .imagen7 {
     grid-area: imagen7;
     background-image: url("../recursos/imagenes/alstroemelias/alstro-blanca y roja.jpeg"); }
-  .main-flores .alstroemerias-flores .imagen8 {
+  .main-flores__alstroemerias-flores .imagen8 {
     grid-area: imagen8;
     background-image: url("../recursos/imagenes/alstroemelias/alstro-rosa.jpg"); }
-  .main-flores .alstroemerias-flores .imagen9 {
+  .main-flores__alstroemerias-flores .imagen9 {
     grid-area: imagen9;
     background-image: url("../recursos/imagenes/alstroemelias/alstro-mixta.jpeg"); }
 
-.main-flores .ramos-flores {
+.main-flores__ramos-flores {
   grid-template-areas: "imagen10 imagen11 imagen12";
   margin: 30px auto;
   width: 800px;
   height: 400px; }
-  .main-flores .ramos-flores .imagen10 {
+  .main-flores__ramos-flores .imagen10 {
     grid-area: imagen10;
     background-image: url("../recursos/imagenes/Ramos/ramo-blanco.jpg"); }
-  .main-flores .ramos-flores .imagen11 {
+  .main-flores__ramos-flores .imagen11 {
     grid-area: imagen11;
     background-image: url("../recursos/imagenes/Ramos/ramo-rosas.jpg"); }
-  .main-flores .ramos-flores .imagen12 {
+  .main-flores__ramos-flores .imagen12 {
     grid-area: imagen12;
     background-image: url("../recursos/imagenes/Ramos/ramo-amarillo.jpg"); }
 
-.main-flores .centros-flores {
+.main-flores__centros-flores {
   grid-template-areas: "imagen13 imagen14 imagen15";
   margin: auto;
   width: 800px;
   height: 400px;
   padding-bottom: 10px; }
-  .main-flores .centros-flores .imagen13 {
+  .main-flores__centros-flores .imagen13 {
     grid-area: imagen13;
     background-image: url("../recursos/imagenes/centros/centro1.jpg"); }
-  .main-flores .centros-flores .imagen14 {
+  .main-flores__centros-flores .imagen14 {
     grid-area: imagen14;
     background-image: url("../recursos/imagenes/centros/centro2.jpg"); }
-  .main-flores .centros-flores .imagen15 {
+  .main-flores__centros-flores .imagen15 {
     grid-area: imagen15;
     background-image: url("../recursos/imagenes/centros/centro3.jpeg"); }
 
@@ -388,7 +388,7 @@
 .main-cuidado {
   background-repeat: no-repeat;
   background-size: cover; }
-  .main-cuidado h1 {
+  .main-cuidado__titulo {
     font-family: "Ranchers", cursive;
     padding: 40px;
     font-weight: bold;
@@ -402,7 +402,7 @@
     animation-duration: 1.5s;
     margin: auto;
     margin-bottom: 40px; }
-  .main-cuidado ol li {
+  .main-cuidado__lista li {
     list-style-type: upper-roman;
     font-size: 30px;
     width: 220px;
@@ -411,10 +411,11 @@
     color: #d398b4;
     font-family: "Unkempt", cursive;
     margin-top: 80px; }
-  .main-cuidado .video iframe {
-    width: 500px;
-    padding: 15px; }
-  .main-cuidado .video p {
+  .main-cuidado__video iframe {
+    width: 50%;
+    padding: 15px;
+    margin: auto; }
+  .main-cuidado__video p {
     color: #7d938a;
     font-size: 40px;
     margin: 50px;
@@ -431,16 +432,13 @@
   main ol {
     display: flex !important;
     flex-direction: column !important; }
-  .video {
-    width: 300px !important;
-    margin: auto !important; }
-    .video p {
-      font-size: 20px !important;
-      text-decoration: none !important;
-      border: solid 5px #997d7d !important;
-      margin: 20px auto !important; } }
+  .video p {
+    font-size: 20px !important;
+    text-decoration: none !important;
+    border: solid 5px #997d7d !important;
+    margin: 20px auto !important; } }
 
-.main-contacto .intro h2 {
+.main-contacto__intro h2 {
   font-family: "Ranchers", cursive;
   font-size: 50px;
   color: #707573;
@@ -448,7 +446,7 @@
   margin-top: 50px;
   margin-bottom: 10px; }
 
-.main-contacto .intro p {
+.main-contacto__intro p {
   font-family: "Yeseva One", cursive;
   font-size: 20px;
   width: 250px;
@@ -456,47 +454,47 @@
   color: #5c5654;
   margin-bottom: 20px; }
 
-.main-contacto .intro hr {
+.main-contacto__intro hr {
   width: 800px;
   color: #000000; }
 
-.main-contacto .formulario {
+.main-contacto__formulario {
   display: flex;
   justify-content: center; }
-  .main-contacto .formulario .form-ingresa-nombre,
-  .main-contacto .formulario .form-ingresa-apellido,
-  .main-contacto .formulario .form-ingresa-edad {
+  .main-contacto__formulario .form-ingresa-nombre,
+  .main-contacto__formulario .form-ingresa-apellido,
+  .main-contacto__formulario .form-ingresa-edad {
     width: 200px;
     height: 50px;
     text-align: center;
     padding: 10px; }
-    .main-contacto .formulario .form-ingresa-nombre:focus,
-    .main-contacto .formulario .form-ingresa-apellido:focus,
-    .main-contacto .formulario .form-ingresa-edad:focus {
+    .main-contacto__formulario .form-ingresa-nombre:focus,
+    .main-contacto__formulario .form-ingresa-apellido:focus,
+    .main-contacto__formulario .form-ingresa-edad:focus {
       background-color: #ADA0A6;
       transform: scale(1.1); }
-  .main-contacto .formulario .form-apellido,
-  .main-contacto .formulario .form-nombre,
-  .main-contacto .formulario .form-edad,
-  .main-contacto .formulario .form-mensaje {
+  .main-contacto__formulario .form-apellido,
+  .main-contacto__formulario .form-nombre,
+  .main-contacto__formulario .form-edad,
+  .main-contacto__formulario .form-mensaje {
     font-family: "Ranchers", cursive;
     color: #ADA0A6;
     font-size: 20px;
     margin: 10px; }
-  .main-contacto .formulario .form-ingresa-mensaje {
+  .main-contacto__formulario .form-ingresa-mensaje {
     width: 220px;
     height: 70px;
     text-align: center;
     margin-bottom: 20px; }
-    .main-contacto .formulario .form-ingresa-mensaje:focus {
+    .main-contacto__formulario .form-ingresa-mensaje:focus {
       background-color: #ada0a6;
       transform: scale(1.1); }
-  .main-contacto .formulario .form-enviar {
+  .main-contacto__formulario .form-enviar {
     width: 100px;
     height: 30px;
     text-align: center;
     margin-left: 60px; }
-    .main-contacto .formulario .form-enviar:hover {
+    .main-contacto__formulario .form-enviar:hover {
       background-color: #ada0a6;
       color: white;
       transform: scale(1.1); }
@@ -516,7 +514,7 @@
   flex-wrap: wrap;
   background-color: #8a7780;
   box-shadow: 15px 15px 15px #707573; }
-  .footer .redes {
+  .footer__redes {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -524,7 +522,7 @@
     margin-top: 25px;
     margin-bottom: 10px;
     font-size: 40px; }
-    .footer .redes a:hover {
+    .footer__redes a:hover {
       background-color: #dad4ec;
       color: #000000;
       transition: color 0.4s;
@@ -532,29 +530,29 @@
       border-radius: 15px;
       width: 50px;
       text-align: center; }
-      .footer .redes a:hover:active {
+      .footer__redes a:hover:active {
         background-color: #000000; }
-  .footer .contactanos {
+  .footer__contactanos {
     display: flex;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: #ADA0A6;
-    border-radius: 5px; }
-    .footer .contactanos h3 {
+    border-radius: 7px;
+    background-color: #63575d; }
+    .footer__contactanos h3 {
       margin-bottom: 10px;
       font-family: "Yeseva One", cursive;
       color: #000000;
       font-size: 20px; }
-    .footer .contactanos p {
+    .footer__contactanos p {
       font-family: "Yeseva One", cursive;
       color: #000000;
       font-size: 20px; }
-  .footer .volver {
+  .footer__volver {
     display: flex;
     justify-content: space-evenly; }
-    .footer .volver a {
+    .footer__volver a {
       font-size: 20px;
       text-decoration: none;
       margin: 20px;
@@ -564,7 +562,7 @@
       background-color: #ADA0A6;
       border-radius: 5px;
       font-weight: bold; }
-      .footer .volver a:hover {
+      .footer__volver a:hover {
         background-color: #dad4ec;
         color: #000000;
         transition: color 0.4s;
