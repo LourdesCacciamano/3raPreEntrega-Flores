@@ -1,14 +1,17 @@
-.main-cuidado{
+.main-cuidado {
     @extend .main-extend;
     background-repeat: no-repeat;
     background-size: cover;
-    &__titulo{
+
+    &__titulo {
         @include h1 ($subtitulo, 40px, bold, 900px);
         margin: auto;
         margin-bottom: 40px;
     }
-    &__lista{
+
+    &__lista {
         @extend .flex-extend;
+
         li {
             list-style-type: upper-roman;
             font-size: 30px;
@@ -21,18 +24,19 @@
 
         }
     }
+
     &__video {
         @extend .flex-column;
 
         iframe {
-            width: 50%;
+            width: 70%;
             padding: 15px;
             margin: auto;
         }
 
         p {
             @include parrafo ($gris-verde, 40px, 50px, underline 4px $rosa-medio);
-       
+
         }
     }
 }
@@ -40,24 +44,38 @@
 
 
 @media (max-width: 576px) {
-    h1{
-        width: 370px !important;
-        height: 114px !important;
-        margin: auto !important;
-        font-size: 27px !important;
-    }
-    main ol {
-        display: flex !important;
-        flex-direction: column !important;
-    }
+    .main-cuidado {
+        h1 {
+            width: 370px !important;
+            margin:5px auto !important;
+            font-size: 27px !important;
+        }
 
-    .video {
+        &__lista {
+            display: flex;
+            flex-direction: column;
+        }
 
-        p {
-            font-size: 20px !important;
-            text-decoration: none !important;
-            border: solid 5px #997d7d !important;
-            margin: 20px auto !important;
+        &__video {
+
+            p {
+                font-size: 20px ;
+                text-decoration: none ;
+                border: solid 5px #997d7d ;
+                margin: 20px auto ;
+                width: 200px;
+            }
         }
     }
+
+
 }
+
+@media (max-width: 350px) {
+     .main-cuidado {
+        h1{
+            width: 300px !important;
+        }
+     }
+}
+   

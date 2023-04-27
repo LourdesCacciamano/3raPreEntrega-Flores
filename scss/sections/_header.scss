@@ -17,19 +17,22 @@
 }
 
 @media (max-width: 576px) {
-    .header {
-        height: $min-height;
-    }
 
     h1 {
         width: 300px !important;
         height: 120px !important;
-        margin: auto !important;
         font-size: 30px !important;
     }
 
     img {
         width: 144px !important;
 
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        width: 250px !important;
+       
     }
 }

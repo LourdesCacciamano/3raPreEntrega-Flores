@@ -1,8 +1,9 @@
 .main-contacto {
     @extend .main-extend;
+
     &__intro {
         @extend .flex-column;
-    
+
         h2 {
             font-family: $subtitulo;
             font-size: 50px;
@@ -11,7 +12,7 @@
             margin-top: 50px;
             margin-bottom: 10px;
         }
-    
+
         p {
             font-family: $links;
             font-size: 20px;
@@ -20,29 +21,30 @@
             color: $gris-oscuro;
             margin-bottom: 20px;
         }
-    
+
         hr {
             width: 800px;
             color: $negro;
         }
     }
+
     &__formulario {
         display: flex;
         justify-content: center;
-    
-    
+
+
         .form-ingresa-nombre,
         .form-ingresa-apellido,
         .form-ingresa-edad {
             @include form-contacto (200px, 50px);
             padding: 10px;
-    
+
             &:focus {
                 background-color: $gris-claro;
                 transform: scale(1.1);
             }
         }
-    
+
         .form-apellido,
         .form-nombre,
         .form-edad,
@@ -51,41 +53,83 @@
             color: $gris-claro;
             font-size: 20px;
             margin: 10px;
-    
+
         }
-    
+
         .form-ingresa-mensaje {
             @include form-contacto (220px, 70px);
             margin-bottom: 20px;
-    
+
             &:focus {
                 background-color: #ada0a6;
                 transform: scale(1.1);
             }
         }
-    
+
         .form-enviar {
             @include form-contacto (100px, 30px);
             margin-left: 60px;
-    
+
             &:hover {
                 background-color: #ada0a6;
                 color: white;
                 transform: scale(1.1);
             }
         }
-    
+
     }
 }
 
 
 
 @media (max-width: 576px) {
-    .intro hr {
-        width: 444px !important;
+    .main-contacto {
+        &__intro {
+            hr {
+                width: 444px;
+            }
+        }
+
+        &__formulario {
+            .form-enviar {
+                background-color: $blanco-hueso;
+            }
+           
+        }
     }
 
-    .form-enviar {
-        background-color: $blanco-hueso !important;
+
+}
+
+@media (max-width: 350px) {
+    .main-contacto{
+        &__intro {
+            hr {
+                width: 300px !important;
+            }
+        }
+        &__formulario{
+            
+        .form-ingresa-nombre,
+        .form-ingresa-apellido,
+        .form-ingresa-edad {
+           margin-left: 20px;
+        }
+
+        .form-apellido,
+        .form-nombre,
+        .form-edad,
+        .form-mensaje {
+            margin-left: 20px;
+
+        }
+
+        .form-ingresa-mensaje {
+            margin-left: 20px;
+        }
+        .form-enviar{
+            margin-bottom: 10px;
+        }
+        }
     }
 }
