@@ -1,16 +1,20 @@
 .navbar{
-    background-color: darken($color: $gris-claro, $amount: 15);
-    box-shadow: 10px 10px 10px $gris-medio;
+    background-color: darken($color: $nav-footer, $amount: 15);
+    box-shadow: 15px 15px 15px $gris-oscuro;
+    .sections{
+        background-color:$gris-medio ;
+    }
     ul{
+      
         li{
             a{
-                color: $gris-claro;
+                color: $blanco-hueso;
                 font-family: $parrafo;
                 font-weight: bold;
                 &:hover{
                     background-color: $blanco-hueso;
                     color: $negro;
-                    border-radius: 15px;
+                    border-radius: 10px;
 
                 }
             }
@@ -26,7 +30,7 @@
    .logo-nav{
     width: 90px;
     border-radius: 15px;
-    box-shadow: 10px 10px 10px $gris-oscuro;
+    box-shadow: 5px 5px 5px $gris-oscuro;
     animation-name: animando-logo;
     animation-iteration-count: infinite;
     animation-duration: 4s;

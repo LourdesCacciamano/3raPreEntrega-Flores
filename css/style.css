@@ -19,7 +19,7 @@
   align-items: center;
   flex-wrap: wrap; }
 
-.grid-flores, .main-flores__rosas-flores, .main-flores__gerberas-flores, .main-flores__alstroemerias-flores, .main-flores__ramos-flores, .main-flores__centros-flores {
+.grid-flores, .main-flores__rosas, .main-flores__gerberas, .main-flores__alstroemerias, .main-flores__ramos, .main-flores__centros {
   background-image: linear-gradient(to bottom, #dad4ec, #eec0f7);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -41,16 +41,18 @@
     content: "»"; }
 
 .navbar {
-  background-color: #8a7780;
-  box-shadow: 10px 10px 10px #707573; }
+  background-color: #242324;
+  box-shadow: 15px 15px 15px #5c5654; }
+  .navbar .sections {
+    background-color: #707573; }
   .navbar ul li a {
-    color: #ADA0A6;
+    color: #dad4ec;
     font-family: "Chivo Mono", monospace;
     font-weight: bold; }
     .navbar ul li a:hover {
       background-color: #dad4ec;
       color: #000000;
-      border-radius: 15px; }
+      border-radius: 10px; }
   .navbar .ancho-max {
     max-width: 850px; }
   .navbar .navbar-collapse {
@@ -58,7 +60,7 @@
   .navbar .logo-nav {
     width: 90px;
     border-radius: 15px;
-    box-shadow: 10px 10px 10px #5c5654;
+    box-shadow: 5px 5px 5px #5c5654;
     animation-name: animando-logo;
     animation-iteration-count: infinite;
     animation-duration: 4s;
@@ -240,8 +242,8 @@
 
 @media (max-width: 350px) {
   .main-nosotros__titulo h1 {
-    width: 300px !important;
-    font-size: 30px !important;
+    width: 450px !important;
+    font-size: 25px !important;
     margin-top: 30px !important; }
   .main-nosotros__ubicacion iframe {
     width: 250px; } }
@@ -281,80 +283,80 @@
   animation-iteration-count: 1;
   animation-delay: .5s; }
 
-.main-flores__rosas-flores {
+.main-flores__rosas {
   grid-template-areas: "imagen1 imagen2 imagen3";
   margin: auto;
   width: 800px;
   height: 400px;
   padding-top: 20px; }
-  .main-flores__rosas-flores .imagen1 {
+  .main-flores__rosas .imagen1 {
     grid-area: imagen1;
     background-image: url("https://res.cloudinary.com/dhxbif0h1/image/upload/v1682542388/Flores%20Coder/rosa-roja_dfqj0u.jpg"); }
-  .main-flores__rosas-flores .imagen2 {
+  .main-flores__rosas .imagen2 {
     grid-area: imagen2;
     background-image: url("https://res.cloudinary.com/dhxbif0h1/image/upload/v1682542388/Flores%20Coder/rosa-rosas_d5swbm.jpg"); }
-  .main-flores__rosas-flores .imagen3 {
+  .main-flores__rosas .imagen3 {
     grid-area: imagen3;
     background-image: url("https://res.cloudinary.com/dhxbif0h1/image/upload/v1682542384/Flores%20Coder/rosa-amarilla_awntot.jpg"); }
 
-.main-flores__gerberas-flores {
+.main-flores__gerberas {
   grid-template-areas: "imagen4 imagen5 imagen6";
   margin: 30px auto;
   width: 800px;
   height: 400px; }
-  .main-flores__gerberas-flores .imagen4 {
+  .main-flores__gerberas .imagen4 {
     grid-area: imagen4;
     background-image: url("https://res.cloudinary.com/dhxbif0h1/image/upload/v1682542503/Flores%20Coder/ger-rosa_k30ps7.jpg"); }
-  .main-flores__gerberas-flores .imagen5 {
+  .main-flores__gerberas .imagen5 {
     grid-area: imagen5;
     background-image: url("https://res.cloudinary.com/dhxbif0h1/image/upload/v1682542502/Flores%20Coder/ger-blanca_y_lila_cca8g6.jpg"); }
-  .main-flores__gerberas-flores .imagen6 {
+  .main-flores__gerberas .imagen6 {
     grid-area: imagen6;
     background-image: url("https://res.cloudinary.com/dhxbif0h1/image/upload/v1682542503/Flores%20Coder/ger-naranjas_l8brkt.jpg"); }
 
-.main-flores__alstroemerias-flores {
+.main-flores__alstroemerias {
   grid-template-areas: "imagen7 imagen8 imagen9";
   margin: 30px auto;
   width: 800px;
   height: 400px; }
-  .main-flores__alstroemerias-flores .imagen7 {
+  .main-flores__alstroemerias .imagen7 {
     grid-area: imagen7;
     background-image: url("https://res.cloudinary.com/dhxbif0h1/image/upload/v1682542425/Flores%20Coder/alstro-blanca_y_roja_gpsmmn.jpg"); }
-  .main-flores__alstroemerias-flores .imagen8 {
+  .main-flores__alstroemerias .imagen8 {
     grid-area: imagen8;
     background-image: url("https://res.cloudinary.com/dhxbif0h1/image/upload/v1682542431/Flores%20Coder/alstro-rosa_u554ty.jpg"); }
-  .main-flores__alstroemerias-flores .imagen9 {
+  .main-flores__alstroemerias .imagen9 {
     grid-area: imagen9;
     background-image: url("https://res.cloudinary.com/dhxbif0h1/image/upload/v1682542425/Flores%20Coder/alstro-mixta_gvmvoc.jpg"); }
 
-.main-flores__ramos-flores {
+.main-flores__ramos {
   grid-template-areas: "imagen10 imagen11 imagen12";
   margin: 30px auto;
   width: 800px;
   height: 400px; }
-  .main-flores__ramos-flores .imagen10 {
+  .main-flores__ramos .imagen10 {
     grid-area: imagen10;
     background-image: url("https://res.cloudinary.com/dhxbif0h1/image/upload/v1682542521/Flores%20Coder/ramo-blanco_wdv66x.jpg"); }
-  .main-flores__ramos-flores .imagen11 {
+  .main-flores__ramos .imagen11 {
     grid-area: imagen11;
     background-image: url("https://res.cloudinary.com/dhxbif0h1/image/upload/v1682542523/Flores%20Coder/ramo-rosas_qnzyoc.jpg"); }
-  .main-flores__ramos-flores .imagen12 {
+  .main-flores__ramos .imagen12 {
     grid-area: imagen12;
     background-image: url("https://res.cloudinary.com/dhxbif0h1/image/upload/v1682542522/Flores%20Coder/ramo-amarillo_ckq70y.jpg"); }
 
-.main-flores__centros-flores {
+.main-flores__centros {
   grid-template-areas: "imagen13 imagen14 imagen15";
   margin: auto;
   width: 800px;
   height: 400px;
   padding-bottom: 10px; }
-  .main-flores__centros-flores .imagen13 {
+  .main-flores__centros .imagen13 {
     grid-area: imagen13;
     background-image: url("https://res.cloudinary.com/dhxbif0h1/image/upload/v1682542541/Flores%20Coder/centro1_jqcrbn.jpg"); }
-  .main-flores__centros-flores .imagen14 {
+  .main-flores__centros .imagen14 {
     grid-area: imagen14;
     background-image: url("https://res.cloudinary.com/dhxbif0h1/image/upload/v1682542544/Flores%20Coder/centro2_aortt7.jpg"); }
-  .main-flores__centros-flores .imagen15 {
+  .main-flores__centros .imagen15 {
     grid-area: imagen15;
     background-image: url("https://res.cloudinary.com/dhxbif0h1/image/upload/v1682542542/Flores%20Coder/centro3_lvtdhq.jpg"); }
 
@@ -365,32 +367,32 @@
     width: 370px !important;
     margin: 5px auto !important;
     font-size: 30px !important; }
-  .main-flores__rosas-flores {
+  .main-flores__rosas {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
     width: 300px;
     height: 700px;
     margin-top: 15px;
     grid-template-areas: "imagen1" "imagen2" "imagen3"; }
-  .main-flores__gerberas-flores {
+  .main-flores__gerberas {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
     width: 300px;
     height: 800px;
     grid-template-areas: "imagen4" "imagen5" "imagen6"; }
-  .main-flores__alstroemerias-flores {
+  .main-flores__alstroemerias {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
     width: 300px;
     height: 1100px;
     grid-template-areas: "imagen7" "imagen8" "imagen9"; }
-  .main-flores__ramos-flores {
+  .main-flores__ramos {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
     width: 300px;
     height: 1500px;
     grid-template-areas: "imagen10" "imagen11" "imagen12"; }
-  .main-flores__centros-flores {
+  .main-flores__centros {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
     width: 300px;
@@ -419,7 +421,8 @@
     animation-iteration-count: 1;
     animation-duration: 1.5s;
     margin: auto;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    margin-top: 7px; }
   .main-cuidado__lista li {
     list-style-type: upper-roman;
     font-size: 30px;
@@ -551,8 +554,7 @@
   justify-content: center;
   align-items: flex-end;
   flex-wrap: wrap;
-  background-color: #8a7780;
-  box-shadow: 15px 15px 15px #707573; }
+  background-color: #242324; }
   .footer__redes {
     display: flex;
     align-items: center;
@@ -578,7 +580,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     border-radius: 7px;
-    background-color: #63575d; }
+    background-color: #ADA0A6; }
     .footer__contactanos h3 {
       margin-bottom: 10px;
       font-family: "Yeseva One", cursive;
