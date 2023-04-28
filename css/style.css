@@ -41,7 +41,7 @@
     content: "»"; }
 
 .navbar {
-  background-color: #242324;
+  background-color: #353335;
   box-shadow: 15px 15px 15px #5c5654; }
   .navbar .sections {
     background-color: #707573; }
@@ -554,7 +554,7 @@
   justify-content: center;
   align-items: flex-end;
   flex-wrap: wrap;
-  background-color: #242324; }
+  background-color: #353335; }
   .footer__redes {
     display: flex;
     align-items: center;
