@@ -1,4 +1,22 @@
 .main-index {
+    &__titulo{
+        height: $height-header;
+        background-color: $gris-claro;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    
+        h1 {
+            @include h1 ($titulo, 33px, bolder, 800px);
+            height: 180px;
+        }
+    
+        img {
+            width: 350px;
+    
+        }
+    }
+
     &__subtitulo {
         @extend .flex-column;
         background-image: linear-gradient(to top, $oscuro, $gris-claro);
@@ -13,6 +31,7 @@
     &__informacion {
         min-height: $min-height;
         display: flex;
+        justify-content: center;
         background-image: linear-gradient(to top, $gris-claro, $oscuro );
 
         img {
@@ -23,6 +42,7 @@
 
         h2 {
             @include main-index (200px, 25px, $rosa-medio, $titulo, 5px auto);
+            
 
         }
 
@@ -31,6 +51,7 @@
 
             border: solid 2px $gris-medio;
             margin-top: 10px;
+            padding: 10px;
 
             &::first-line {
                 font-weight: bold;
@@ -46,6 +67,18 @@
 
 @media (max-width: 576px) {
     .main-index {
+        &__titulo{
+            h1 {
+                width: 300px !important;
+                height: 120px !important;
+                font-size: 30px !important;
+            }
+        
+            img {
+                width: 144px !important;
+        
+            }
+        }
         &__informacion {
             display: flex;
             flex-direction: column ;
@@ -71,6 +104,12 @@
 
 @media (max-width: 350px) {
     .main-index{
+        &__titulo{
+            h1 {
+                width: 250px !important;
+               
+            }
+        }
         &__subtitulo{
             p{
                 font-size: 40px;

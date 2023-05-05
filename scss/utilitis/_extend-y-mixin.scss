@@ -33,11 +33,27 @@
     font-family: $parrafo;
     font-size: 25px;
     background-color: $blanco-hueso;
+    padding: 10px;
 
     &::before {
         content: "»";
     }
 }
+.extend-header{
+    font-size: 20px;
+    font-family: $parrafo;
+    font-weight: bold;
+}
+.extend-header2{
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+    background-color: $gris-claro;
+    color: $negro;
+    border-radius: 10px;
+}
+
+
 
 // MIXIN
 @mixin main-index ($ancho, $grosor, $color-texto, $tipografia, $distancia-afuera) {
@@ -71,7 +87,7 @@
     text-align: center;
 }
 
-@mixin h1 ( $tipografia, $distancia-adentro, $negrita, $ancho) {
+@mixin h1 ($tipografia, $distancia-adentro, $negrita, $ancho) {
     font-family: $tipografia;
     padding: $distancia-adentro;
     font-weight: $negrita;
@@ -83,4 +99,18 @@
     text-align: center;
     animation-iteration-count: 1;
     animation-duration: 1.5s;
+}
+
+@mixin texto ($tipografia, $letra-color, $ancho, ) {
+    font-family: $tipografia;
+    color: $letra-color;
+    width: $ancho;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+
+
 }
