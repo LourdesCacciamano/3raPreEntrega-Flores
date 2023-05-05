@@ -39,18 +39,46 @@
         content: "»";
     }
 }
-.extend-header{
+
+.extend-header {
     font-size: 20px;
     font-family: $parrafo;
     font-weight: bold;
 }
-.extend-header2{
+
+.extend-header2 {
     width: 500px;
     margin: auto;
     padding: 10px;
     background-color: $gris-claro;
     color: $negro;
     border-radius: 10px;
+}
+
+.extend-precio {
+    font-size: 20px;
+    background-color: $gris-oscuro-rojo;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    color: rgb(80, 211, 80);
+    padding: 5px;
+    border-radius: 10px;
+    margin: auto;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: .5s;
+}
+
+.extend-carrito {
+    width: 100px;
+    font-size: 30px;
+    margin: auto;
+    background-color: $rosita;
+    border: none;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: .5s;
 }
 
 

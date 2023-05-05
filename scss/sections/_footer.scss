@@ -1,4 +1,4 @@
-.footer{
+.footer {
     min-height: $min-footer;
     display: flex;
     flex-direction: row;
@@ -6,8 +6,8 @@
     align-items: flex-end;
     flex-wrap: wrap;
     background-color: lighten($color: $nav-footer, $amount: 5);
-    
-    
+
+
 
     &__redes {
         display: flex;
@@ -17,22 +17,24 @@
         margin-top: 25px;
         margin-bottom: 10px;
         font-size: 40px;
-        a{
-               &:hover{
-            background-color: $blanco-hueso;
-            color: $negro;
-            transition: color 0.4s;
-            background-color: 0.2s;
-            border-radius: 15px;
-            width: 50px;
-            text-align: center;
-            &:active{
-                background-color: $negro;
+
+        a {
+            &:hover {
+                background-color: $blanco-hueso;
+                color: $negro;
+                transition: color 0.4s;
+                background-color: 0.2s;
+                border-radius: 15px;
+                width: 50px;
+                text-align: center;
+
+                &:active {
+                    background-color: $negro;
+                }
             }
         }
-        }
-     
-        
+
+
 
     }
 
@@ -46,7 +48,7 @@
         background-color: $gris-oscuro-rojo;
         box-shadow: 10px 5px 5px $gris-claro-lila;
         padding: 10px;
-        
+
 
         h3 {
             margin-bottom: 10px;
@@ -66,7 +68,7 @@
     &__volver {
         display: flex;
         justify-content: space-evenly;
-      
+
 
         a {
             font-size: 20px;
@@ -94,8 +96,8 @@
 }
 
 @media (max-widht:576px) {
-    .contactanos{
-        p{
+    .contactanos {
+        p {
             text-decoration: none !important;
             color: $negro !important;
         }

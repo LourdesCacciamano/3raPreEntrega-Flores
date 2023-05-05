@@ -32,13 +32,11 @@
         display: flex;
         justify-content: center;
 
-
         .form-ingresa-nombre,
         .form-ingresa-apellido,
         .form-ingresa-edad {
             @include form-contacto (200px, 50px);
             padding: 10px;
-           
 
             &:focus {
                 background-color: $gris-claro;
@@ -95,7 +93,7 @@
             .form-enviar {
                 background-color: $blanco-hueso;
             }
-           
+
         }
     }
 
@@ -103,34 +101,36 @@
 }
 
 @media (max-width: 350px) {
-    .main-contacto{
+    .main-contacto {
         &__intro {
             hr {
-                width:70% ;
+                width: 70%;
             }
         }
-        &__formulario{
-            
-        .form-ingresa-nombre,
-        .form-ingresa-apellido,
-        .form-ingresa-edad {
-           margin-left: 20px;
-        }
 
-        .form-apellido,
-        .form-nombre,
-        .form-edad,
-        .form-mensaje {
-            margin-left: 20px;
+        &__formulario {
 
-        }
+            .form-ingresa-nombre,
+            .form-ingresa-apellido,
+            .form-ingresa-edad {
+                margin-left: 20px;
+            }
 
-        .form-ingresa-mensaje {
-            margin-left: 20px;
-        }
-        .form-enviar{
-            margin-bottom: 10px;
-        }
+            .form-apellido,
+            .form-nombre,
+            .form-edad,
+            .form-mensaje {
+                margin-left: 20px;
+
+            }
+
+            .form-ingresa-mensaje {
+                margin-left: 20px;
+            }
+
+            .form-enviar {
+                margin-bottom: 10px;
+            }
         }
     }
 }

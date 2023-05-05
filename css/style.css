@@ -54,6 +54,30 @@
   color: #000000;
   border-radius: 10px; }
 
+.extend-precio, .main-flores__rosas small, .main-flores__gerberas small, .main-flores__alstroemerias small, .main-flores__ramos small, .main-flores__centros small {
+  font-size: 20px;
+  background-color: #696969;
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  color: #50d350;
+  padding: 5px;
+  border-radius: 10px;
+  margin: auto;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-delay: .5s; }
+
+.extend-carrito, .main-flores__rosas button, .main-flores__gerberas button, .main-flores__alstroemerias button, .main-flores__ramos button, .main-flores__centros button {
+  width: 100px;
+  font-size: 30px;
+  margin: auto;
+  background-color: #eec0f7;
+  border: none;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-delay: .5s; }
+
 header {
   background-image: linear-gradient(to top, #ADA0A6, #707573); }
 
@@ -61,7 +85,7 @@ header {
   margin-top: 25px;
   padding-bottom: 25px; }
   .general .w-100 {
-    max-width: 65% !important;
+    width: 65% !important;
     margin: auto; }
   .general .texto1 h5 {
     font-family: "Unkempt", cursive;
@@ -86,7 +110,9 @@ header {
     margin-bottom: 10px;
     font-size: 30px;
     font-weight: bolder;
-    background-color: #dad4ec; }
+    background-color: #dad4ec;
+    animation-iteration-count: 1;
+    animation-duration: 2s; }
   .general .texto3 h5 {
     font-family: "Ranchers", cursive;
     color: #5c5654;
@@ -97,7 +123,9 @@ header {
     margin-bottom: 10px;
     font-size: 30px;
     font-weight: bolder;
-    background-color: #dad4ec; }
+    background-color: #dad4ec;
+    animation-iteration-count: 1;
+    animation-duration: 2s; }
   .general .flecha {
     width: 5rem;
     height: 4rem;
@@ -106,12 +134,49 @@ header {
 @media (max-width: 576px) {
   .general .flecha {
     width: 2rem;
-    height: 2rem; } }
+    height: 2rem; }
+  .general .w-100 {
+    width: 90% !important; }
+  .general .texto1 h5 {
+    font-size: 20px;
+    width: 250px; }
+  .general .texto1 p {
+    font-size: 15px; }
+  .general .texto2 h5 {
+    font-size: 20px;
+    width: 400px; }
+  .general .texto2 p {
+    font-size: 15px;
+    width: 250px; }
+  .general .texto3 h5 {
+    display: none; }
+  .general .texto3 p {
+    font-size: 15px;
+    width: 300px; } }
 
 @media (max-width: 350px) {
   .general .flecha {
     width: 2rem;
-    height: 2rem; } }
+    height: 2rem; }
+  .general .w-100 {
+    width: 90% !important; }
+  .general .texto1 h5 {
+    font-size: 15px;
+    width: 200px; }
+  .general .texto1 p {
+    font-size: 10px;
+    margin-bottom: 0; }
+  .general .texto2 h5 {
+    font-size: 15px;
+    width: 260px; }
+  .general .texto2 p {
+    font-size: 10px;
+    width: 200px; }
+  .general .texto3 h5 {
+    display: none; }
+  .general .texto3 p {
+    font-size: 10px;
+    width: 200px; } }
 
 .navbar {
   background-color: #353335;
@@ -159,28 +224,6 @@ header {
   .menu {
     font-size: 15px !important; } }
 
-.main-index__titulo {
-  height: 100vh;
-  background-color: #ADA0A6;
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center; }
-  .main-index__titulo h1 {
-    font-family: "Unkempt", cursive;
-    padding: 33px;
-    font-weight: bolder;
-    width: 800px;
-    color: #000000;
-    background-image: linear-gradient(to bottom, #d9d2cb, #211e1c);
-    font-size: 50px;
-    border-radius: 15px;
-    text-align: center;
-    animation-iteration-count: 1;
-    animation-duration: 1.5s;
-    height: 180px; }
-  .main-index__titulo img {
-    width: 350px; }
-
 .main-index__subtitulo {
   background-image: linear-gradient(to top, #363333, #ADA0A6); }
   .main-index__subtitulo p {
@@ -224,12 +267,6 @@ header {
       font-size: 22px; }
 
 @media (max-width: 576px) {
-  .main-index__titulo h1 {
-    width: 300px !important;
-    height: 120px !important;
-    font-size: 30px !important; }
-  .main-index__titulo img {
-    width: 144px !important; }
   .main-index__informacion {
     display: flex;
     flex-direction: column;
@@ -242,8 +279,6 @@ header {
     font-size: 57px; } }
 
 @media (max-width: 350px) {
-  .main-index__titulo h1 {
-    width: 250px !important; }
   .main-index__subtitulo p {
     font-size: 40px; } }
 
@@ -433,7 +468,8 @@ header {
 
 @media (max-width: 576px) {
   .main-flores .p-flores {
-    font-size: 23px; }
+    font-size: 23px;
+    margin: auto; }
   .main-flores__titulo h1 {
     width: 370px !important;
     margin: 5px auto !important;

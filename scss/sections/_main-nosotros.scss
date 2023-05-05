@@ -18,7 +18,7 @@
         p {
             @extend .extend-parrafos;
             margin: 30px;
-            
+
 
         }
 
@@ -109,23 +109,24 @@
                 margin-top: 50px;
             }
 
-        
+
         }
 
     }
 }
 
 @media (max-width: 350px) {
-    .main-nosotros{
+    .main-nosotros {
         &__titulo {
-            h1{
+            h1 {
                 width: 450px !important;
                 font-size: 25px !important;
                 margin-top: 30px !important;
             }
         }
-        &__ubicacion{
-            iframe{
+
+        &__ubicacion {
+            iframe {
                 width: 250px;
             }
         }

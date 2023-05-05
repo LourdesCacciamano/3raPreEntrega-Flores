@@ -1,21 +1,5 @@
 .main-index {
-    &__titulo{
-        height: $height-header;
-        background-color: $gris-claro;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    
-        h1 {
-            @include h1 ($titulo, 33px, bolder, 800px);
-            height: 180px;
-        }
-    
-        img {
-            width: 350px;
-    
-        }
-    }
+
 
     &__subtitulo {
         @extend .flex-column;
@@ -42,7 +26,7 @@
 
         h2 {
             @include main-index (200px, 25px, $rosa-medio, $titulo, 5px auto);
-            
+
 
         }
 
@@ -67,21 +51,10 @@
 
 @media (max-width: 576px) {
     .main-index {
-        &__titulo{
-            h1 {
-                width: 300px !important;
-                height: 120px !important;
-                font-size: 30px !important;
-            }
-        
-            img {
-                width: 144px !important;
-        
-            }
-        }
+
         &__informacion {
             display: flex;
-            flex-direction: column ;
+            flex-direction: column;
             align-content: space-around;
             flex-wrap: wrap;
             margin: auto;
@@ -103,15 +76,10 @@
 }
 
 @media (max-width: 350px) {
-    .main-index{
-        &__titulo{
-            h1 {
-                width: 250px !important;
-               
-            }
-        }
-        &__subtitulo{
-            p{
+    .main-index {
+
+        &__subtitulo {
+            p {
                 font-size: 40px;
             }
         }

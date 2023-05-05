@@ -39,7 +39,17 @@
             "imagen1 imagen2 imagen3"
         ;
 
-        
+        small {
+            @extend .extend-precio;
+
+        }
+
+        button {
+            @extend .extend-carrito;
+
+        }
+
+
         @include flores (auto);
         padding-top: 20px;
 
@@ -68,6 +78,16 @@
         ;
         @include flores (30px auto);
 
+        small {
+            @extend .extend-precio;
+
+        }
+
+        button {
+            @extend .extend-carrito;
+
+        }
+
 
 
         .imagen4 {
@@ -94,6 +114,16 @@
         ;
         @include flores (30px auto);
 
+        small {
+            @extend .extend-precio;
+
+        }
+
+        button {
+            @extend .extend-carrito;
+
+        }
+
 
         .imagen7 {
             grid-area: imagen7;
@@ -117,6 +147,16 @@
             "imagen10 imagen11 imagen12"
         ;
         @include flores (30px auto);
+
+        small {
+            @extend .extend-precio;
+
+        }
+
+        button {
+            @extend .extend-carrito;
+
+        }
 
 
 
@@ -144,6 +184,16 @@
         @include flores (auto);
         padding-bottom: 10px;
 
+        small {
+            @extend .extend-precio;
+
+        }
+
+        button {
+            @extend .extend-carrito;
+
+        }
+
         .imagen13 {
             grid-area: imagen13;
             background-image: url("https://res.cloudinary.com/dhxbif0h1/image/upload/v1682542541/Flores%20Coder/centro1_jqcrbn.jpg");
@@ -168,6 +218,7 @@
 
         .p-flores {
             font-size: 23px;
+            margin: auto;
         }
 
         &__titulo {

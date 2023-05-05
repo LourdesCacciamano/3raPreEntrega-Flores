@@ -5,65 +5,167 @@ header {
 .general {
     margin-top: 25px;
     padding-bottom: 25px;
+
     .w-100 {
-       max-width: 65% !important;
+        width: 65% !important;
         margin: auto;
     }
-    .texto1{
-        h5{
-           @include texto ($titulo, $negro, 500px);
+
+    .texto1 {
+        h5 {
+            @include texto ($titulo, $negro, 500px);
             background-image: linear-gradient(to bottom, $claro2, $oscuro2);
             animation-iteration-count: 1;
             animation-duration: 1.5s;
         }
 
-        p{
-           @extend .extend-header;
+        p {
+            @extend .extend-header;
         }
-        
+
     }
-    .texto2{
-        h5{
-            @include texto ($subtitulo,  $gris-medio, 700px);
+
+    .texto2 {
+        h5 {
+            @include texto ($subtitulo, $gris-medio, 700px);
             background-color: $blanco-hueso;
+            animation-iteration-count: 1;
+            animation-duration: 2s;
         }
-        p{
+
+        p {
             @extend .extend-header;
             @extend .extend-header2;
         }
     }
-    .texto3{
-        h5{
-            @include texto ($subtitulo, $gris-oscuro, 300px);           
+
+    .texto3 {
+        h5 {
+            @include texto ($subtitulo, $gris-oscuro, 300px);
             background-color: $blanco-hueso;
+            animation-iteration-count: 1;
+            animation-duration: 2s;
         }
-        p{
+
+        p {
             @extend .extend-header;
-           @extend .extend-header2;
-            
+            @extend .extend-header2;
+
         }
     }
-    .flecha{
+
+    .flecha {
         width: 5rem;
         height: 4rem;
         box-shadow: 10px 10px 10px $negro;
-        
+
     }
 }
 
-@media(max-width: 576px ) {
-    .general{
-        .flecha{
+@media(max-width: 576px) {
+    .general {
+        .flecha {
             width: 2rem;
             height: 2rem;
         }
+
+        .w-100 {
+            width: 90% !important;
+
+        }
+
+        .texto1 {
+            h5 {
+                font-size: 20px;
+                width: 250px;
+
+            }
+
+            p {
+                font-size: 15px;
+
+            }
+        }
+
+        .texto2 {
+            h5 {
+                font-size: 20px;
+                width: 400px;
+            }
+
+            p {
+                font-size: 15px;
+                width: 250px;
+            }
+        }
+
+        .texto3 {
+            h5 {
+                display: none;
+            }
+
+            p {
+                font-size: 15px;
+                width: 300px;
+            }
+        }
+
+
     }
+
 }
-@media(max-width: 350px ) {
-    .general{
-        .flecha{
+
+
+
+
+
+@media(max-width: 350px) {
+    .general {
+        .flecha {
             width: 2rem;
             height: 2rem;
         }
+
+        .w-100 {
+            width: 90% !important;
+
+        }
+
+        .texto1 {
+            h5 {
+                font-size: 15px;
+                width: 200px;
+
+            }
+
+            p {
+                font-size: 10px;
+                margin-bottom: 0;
+            }
+        }
+
+        .texto2 {
+            h5 {
+                font-size: 15px;
+                width: 260px;
+            }
+
+            p {
+                font-size: 10px;
+                width: 200px;
+            }
+        }
+
+        .texto3 {
+            h5 {
+                display: none;
+            }
+
+            p {
+                font-size: 10px;
+                width: 200px;
+            }
+        }
+
     }
 }

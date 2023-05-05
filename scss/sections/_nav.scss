@@ -1,17 +1,20 @@
-.navbar{
+.navbar {
     background-color: darken($color: $nav-footer, $amount: 15);
     box-shadow: 15px 15px 15px $gris-oscuro;
-    .sections{
-        background-color:$gris-medio ;
+
+    .sections {
+        background-color: $gris-medio ;
     }
-    ul{
-      
-        li{
-            a{
+
+    ul {
+
+        li {
+            a {
                 color: $blanco-hueso;
                 font-family: $parrafo;
                 font-weight: bold;
-                &:hover{
+
+                &:hover {
                     background-color: $blanco-hueso;
                     color: $negro;
                     border-radius: 10px;
@@ -20,29 +23,31 @@
             }
         }
     }
-    .ancho-max{
-         max-width: 850px;
+
+    .ancho-max {
+        max-width: 850px;
     }
-    
-    .navbar-collapse{
+
+    .navbar-collapse {
         justify-content: flex-end;
     }
-   .logo-nav{
-    width: 90px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px $gris-oscuro;
-    animation-name: animando-logo;
-    animation-iteration-count: infinite;
-    animation-duration: 4s;
-    animation-delay: 3s;
-   }
-   
-   .menu{
-    font-family: $parrafo;
-    font-size: 25px;
-    font-weight: bold;
-   }
-  
+
+    .logo-nav {
+        width: 90px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px $gris-oscuro;
+        animation-name: animando-logo;
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+        animation-delay: 3s;
+    }
+
+    .menu {
+        font-family: $parrafo;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
 }
 
 @keyframes animando-logo {
@@ -66,12 +71,12 @@
     }
 }
 
-@media  (max-width: 576px) {
-    .logo-nav{
+@media (max-width: 576px) {
+    .logo-nav {
         width: 70px !important;
     }
-    .menu{
+
+    .menu {
         font-size: 15px !important;
     }
 }
-
