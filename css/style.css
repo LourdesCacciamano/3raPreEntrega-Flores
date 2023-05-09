@@ -31,7 +31,7 @@
   background-image: linear-gradient(to bottom, #ADA0A6, #363333); }
 
 .extend-parrafos, .main-nosotros__info-primero p, .main-nosotros__info-segunda p, .main-nosotros__ubicacion p {
-  width: 220px;
+  width: 250px;
   text-align: center;
   border: solid 10px #ADA0A6;
   font-family: "Chivo Mono", monospace;
@@ -85,7 +85,7 @@ header {
   margin-top: 25px;
   padding-bottom: 25px; }
   .general .w-100 {
-    width: 65% !important;
+    width: 70% !important;
     margin: auto; }
   .general .texto1 h5 {
     font-family: "Unkempt", cursive;
